@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+
+
+#homeBTN{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    transition: 0.5s all;
+
+}
+
+#homeBTN:hover{
+    transform:  scale(1.25);
+    border-radius: 50%;
+
+}
+
+
+
+.mega{
+    box-shadow: -5px 10px 0px 0px #0D6EFD;
+    transition: 1s all;
+}
+
+#shadow:hover{
+    box-shadow: -5px 2px 54px -9px transparent;
+}
+
+
+
+.btnDiv{
+    transition: 0.5s all;
+}
+
+.btnDiv:hover{
+    margin-left: 20px;
+}
+
+
+/* ------------------------------------------------------ */
+
+.banner_parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    padding: 48px;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .rotating-text {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+    transform: translateX(-80px);
+  }
+  .rotating-text p {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+  }
+  .rotating-text p .megaWord {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+  }
+  .rotating-text p .megaWord .letter {
+    transform-origin: center center 25px;
+  }
+  .rotating-text p .megaWord .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+  }
+  .rotating-text p .megaWord .letter.in {
+    transition: 0.38s ease;
+  }
+  .rotating-text p .megaWord .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .wMega-1 {
+    color: #e74c3c;
+  }
+  
+  .wMega-2 {
+    color: #8e44ad;
+  }
+  
+  .wMega-3 {
+    color: #3498db;
+  }
+  
+  .wMega-4 {
+    color: #2ecc71;
+  }
+  
+  .wMega-5 {
+    color: #f1c40f;
+  }
